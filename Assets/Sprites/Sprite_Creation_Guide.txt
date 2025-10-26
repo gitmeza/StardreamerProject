@@ -1,0 +1,42 @@
+# Simple Sprite Creation Instructions
+
+Since we can't create actual image files through text, here's how to create the basic sprites in Unity:
+
+## Method 1: Using Unity's Built-in Sprites
+
+1. **Player Ship Sprite:**
+   - Right-click in Project window > Create > 2D > Sprites > Square
+   - Name it "PlayerShip"
+   - In the Sprite Editor, modify to look like a triangle pointing up
+   - Set color to bright blue (#00BFFF)
+
+2. **Enemy Ship Sprites:**
+   - Create multiple square sprites
+   - Name them "EnemyShip1", "EnemyShip2", "EnemyShip3"
+   - Modify shapes to look like different enemy ships
+   - Set colors to red (#FF0000), orange (#FFA500), yellow (#FFFF00)
+
+3. **Bullet Sprites:**
+   - Create small square sprites
+   - Name them "PlayerBullet" and "EnemyBullet"
+   - Make them small rectangles
+   - Set colors to white (#FFFFFF) for player bullets, red (#FF0000) for enemy bullets
+
+## Method 2: Using Simple Colored Rectangles
+
+For now, you can use Unity's default white square sprites and just change their colors in the SpriteRenderer component.
+
+## Method 3: Create Custom Sprites
+
+1. Go to Assets > Create > 2D > Sprites > Square
+2. Select the sprite in the Project window
+3. In the Inspector, click "Sprite Editor"
+4. Use the editing tools to modify the shape
+5. Save and apply changes
+
+## Quick Setup for Testing
+
+For immediate testing, you can:
+1. Use Unity's default white square sprites
+2. Set different colors in the SpriteRenderer components
+3. Scale them appropriately (Player: 0.5x0.5, Enemies: 0.4x0.4, Bullets: 0.1x0.1)
