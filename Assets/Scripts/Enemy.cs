@@ -72,6 +72,10 @@ public class Enemy : MonoBehaviour
                     0
                 );
                 transform.position = startPosition + circlePosition;
+                if (transform.position.y < -6f)
+                {
+                    break;
+                }
                 return;
                 
             case MovementPattern.SideToSide:
@@ -86,6 +90,10 @@ public class Enemy : MonoBehaviour
         if (transform.position.y < -6f)
         {
             Destroy(gameObject);
+            if (gameManager != null)
+            {
+                gameManager.EnemyDestroyed();
+            }
         }
     }
     

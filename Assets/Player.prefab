@@ -184,12 +184,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0be64a738d194a0c97204cf1326bced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 5
+  moveSpeed: 7
   boundaryPadding: 0.5
   bulletPrefab: {fileID: 8777619395863756378, guid: ec2fffeffb4484c648759137bb25a7b6, type: 3}
   firePoint: {fileID: 3101570100598106297}
   fireRate: 0.2
-  shootSound: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: b2b3b620c8c0b4a1ea9901898007ea81, type: 3}
 --- !u!82 &9215716673363354280
 AudioSource:
   m_ObjectHideFlags: 0
@@ -202,9 +202,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.8
+  m_Pitch: 1.1
   Loop: 0
   Mute: 0
   Spatialize: 0

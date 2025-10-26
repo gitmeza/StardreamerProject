@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 03753a07a0b434f9cad628fd9216a31f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1461541037749744024
+    second: StardreamerLogo_0
+  - first:
+      213: -324515111049759279
+    second: StardreamerLogo_1
+  - first:
+      213: -2642582003261065884
+    second: StardreamerLogo_2
+  - first:
+      213: 5494501777483706231
+    second: StardreamerLogo_3
+  - first:
+      213: 5303074403545205487
+    second: StardreamerLogo_4
+  - first:
+      213: -5964132194229646394
+    second: StardreamerLogo_5
+  - first:
+      213: 5243225688429250689
+    second: StardreamerLogo_6
+  - first:
+      213: 1831986499256757164
+    second: StardreamerLogo_7
+  - first:
+      213: -6929334707100203795
+    second: StardreamerLogo_8
+  - first:
+      213: 6104556716596305303
+    second: StardreamerLogo_9
+  - first:
+      213: 2308869870249564134
+    second: StardreamerLogo_10
+  - first:
+      213: 6317717390175112107
+    second: StardreamerLogo_11
+  - first:
+      213: 2750151396447461182
+    second: StardreamerLogo_12
+  - first:
+      213: 7741016440757851319
+    second: StardreamerLogo_13
+  - first:
+      213: 3037412715375424773
+    second: StardreamerLogo_14
+  - first:
+      213: -2049722035152772378
+    second: StardreamerLogo_15
+  - first:
+      213: -3505904596058827988
+    second: StardreamerLogo_16
+  - first:
+      213: -9105040159802635309
+    second: StardreamerLogo_17
+  - first:
+      213: -7314418930961573841
+    second: StardreamerLogo_18
+  - first:
+      213: -5522242251893027602
+    second: StardreamerLogo_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StardreamerLogo_0
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1253
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891babb84df684410800000000000000
+      internalID: 1461541037749744024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_1
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1168
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5f1a1d9371f7bf0800000000000000
+      internalID: -324515111049759279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_2
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 560
+        width: 769
+        height: 674
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465b8c54ba9a35bd0800000000000000
+      internalID: -2642582003261065884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_3
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1055
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f2ba86144604c40800000000000000
+      internalID: 5494501777483706231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_4
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 461
+        width: 591
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea47c8b21e489940800000000000000
+      internalID: 5303074403545205487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_5
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 678
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb88716e552b3da0800000000000000
+      internalID: -5964132194229646394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_6
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 593
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188470cdbfda3c840800000000000000
+      internalID: 5243225688429250689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_7
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 424
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caba289c3068c6910800000000000000
+      internalID: 1831986499256757164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_8
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 481
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4c18d0cce06df90800000000000000
+      internalID: -6929334707100203795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_9
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 178
+        width: 134
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d92fb8dfdb7b450800000000000000
+      internalID: 6104556716596305303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_10
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 180
+        width: 140
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7d3d00ae0ca0020800000000000000
+      internalID: 2308869870249564134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_11
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 180
+        width: 170
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab02b06e7a0da750800000000000000
+      internalID: 6317717390175112107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_12
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 180
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f9bc7cf108a2620800000000000000
+      internalID: 2750151396447461182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_13
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 180
+        width: 146
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b494df607d9d6b60800000000000000
+      internalID: 7741016440757851319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_14
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 180
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505f43095ce072a20800000000000000
+      internalID: 3037412715375424773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_15
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 180
+        width: 122
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2ad6e3baced83e0800000000000000
+      internalID: -2049722035152772378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_16
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 180
+        width: 170
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23118f4856885fc0800000000000000
+      internalID: -3505904596058827988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_17
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 180
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db4c49173664a180800000000000000
+      internalID: -9105040159802635309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_18
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 180
+        width: 121
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2894a95cb6fd7a90800000000000000
+      internalID: -7314418930961573841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StardreamerLogo_19
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 180
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec43441eed0d53b0800000000000000
+      internalID: -5522242251893027602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      StardreamerLogo_0: 1461541037749744024
+      StardreamerLogo_1: -324515111049759279
+      StardreamerLogo_10: 2308869870249564134
+      StardreamerLogo_11: 6317717390175112107
+      StardreamerLogo_12: 2750151396447461182
+      StardreamerLogo_13: 7741016440757851319
+      StardreamerLogo_14: 3037412715375424773
+      StardreamerLogo_15: -2049722035152772378
+      StardreamerLogo_16: -3505904596058827988
+      StardreamerLogo_17: -9105040159802635309
+      StardreamerLogo_18: -7314418930961573841
+      StardreamerLogo_19: -5522242251893027602
+      StardreamerLogo_2: -2642582003261065884
+      StardreamerLogo_3: 5494501777483706231
+      StardreamerLogo_4: 5303074403545205487
+      StardreamerLogo_5: -5964132194229646394
+      StardreamerLogo_6: 5243225688429250689
+      StardreamerLogo_7: 1831986499256757164
+      StardreamerLogo_8: -6929334707100203795
+      StardreamerLogo_9: 6104556716596305303
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

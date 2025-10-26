@@ -19,17 +19,10 @@ public class GameManager : MonoBehaviour
     public float spawnRate = 2f;
     public int enemiesPerWave = 10;
     public float waveDelay = 3f;
-    
-    [Header("UI References")]
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI livesText;
-    public TextMeshProUGUI waveText;
-    public GameObject gameOverPanel;
-    public TextMeshProUGUI finalScoreText;
-    public Button restartButton;
-    
+
     [Header("Audio")]
     public AudioClip gameOverSound;
+    public AudioClip playerDeathSound;
     
     private int enemiesSpawned = 0;
     private int enemiesDestroyed = 0;
@@ -37,19 +30,15 @@ public class GameManager : MonoBehaviour
     private float nextSpawnTime;
     private AudioSource audioSource;
     private Camera mainCamera;
+    private UIManager uiManager;
     
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         mainCamera = Camera.main;
-        
-        UpdateUI();
+        uiManager = FindFirstObjectByType<UIManager>();
+
         StartWave();
-        
-        if (restartButton != null)
-        {
-            restartButton.onClick.AddListener(RestartGame);
-        }
     }
     
     void Update()
@@ -79,7 +68,6 @@ public class GameManager : MonoBehaviour
         {
             // Wave completed
             currentWave++;
-            UpdateUI();
             StartWave();
         }
     }
@@ -119,18 +107,24 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    
+
     public void AddScore(int points)
     {
         score += points;
         enemiesDestroyed++;
-        UpdateUI();
     }
     
+    public void EnemyDestroyed()
+    {
+        enemiesDestroyed++;
+    }
+
     public void PlayerHit()
     {
+        // Play sound
+        if (playerDeathSound != null)
+        audioSource.PlayOneShot(playerDeathSound);
         playerLives--;
-        UpdateUI();
         
         if (playerLives <= 0)
         {
@@ -143,7 +137,7 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    void RespawnPlayer()
+    public void RespawnPlayer()
     {
         // Find and respawn player
         if (playerPrefab != null)
@@ -155,45 +149,16 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
         gameActive = false;
-        
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(true);
-        }
-        
-        if (finalScoreText != null)
-        {
-            finalScoreText.text = "Final Score: " + score;
-        }
-        
-        if (audioSource != null && gameOverSound != null)
-        {
+        uiManager?.ShowGameOver(score);
+
+        if (audioSource && gameOverSound)
             audioSource.PlayOneShot(gameOverSound);
-        }
         
         // Stop all enemies
         Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
         foreach (Enemy enemy in enemies)
         {
             Destroy(enemy.gameObject);
-        }
-    }
-    
-    void UpdateUI()
-    {
-        if (scoreText != null)
-        {
-            scoreText.text = "Score: " + score;
-        }
-        
-        if (livesText != null)
-        {
-            livesText.text = "Lives: " + playerLives;
-        }
-        
-        if (waveText != null)
-        {
-            waveText.text = "Wave: " + currentWave;
         }
     }
     
