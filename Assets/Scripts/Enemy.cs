@@ -17,11 +17,16 @@ public class Enemy : MonoBehaviour
     public MovementPattern movementPattern = MovementPattern.StraightDown;
     public float zigzagAmplitude = 2f;
     public float zigzagFrequency = 2f;
-    
+
+    [Header("Audio")]
+    public AudioClip shootSound;
+    public AudioClip enemyDeathSound;
+
     private float nextFireTime;
     private Vector3 startPosition;
     private float timeAlive;
     private GameManager gameManager;
+    private AudioSource audioSource;
     
     // Event for when enemy is destroyed
     public System.Action OnEnemyDestroyed;
@@ -39,6 +44,7 @@ public class Enemy : MonoBehaviour
         startPosition = transform.position;
         nextFireTime = Time.time + Random.Range(0f, fireRate);
         gameManager = FindFirstObjectByType<GameManager>();
+        audioSource = GetComponent<AudioSource>();
     }
     
     void Update()
@@ -104,6 +110,11 @@ public class Enemy : MonoBehaviour
             if (Random.value < shootChance)
             {
                 GameObject bullet = Instantiate(enemyBulletPrefab, firePoint.position, firePoint.rotation);
+                if (audioSource != null && shootSound != null)
+                {
+                    audioSource.PlayOneShot(shootSound);
+                }
+                
                 Bullet bulletScript = bullet.GetComponent<Bullet>();
                 if (bulletScript != null)
                 {
@@ -131,32 +142,18 @@ public class Enemy : MonoBehaviour
         {
             gameManager.AddScore(scoreValue);
         }
-        
+
         // Notify spawner
         OnEnemyDestroyed?.Invoke();
-        
+
         // Create explosion effect (optional)
         // Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        // Play sound
+        if (enemyDeathSound != null)
+        {
+            AudioSource.PlayClipAtPoint(enemyDeathSound, Camera.main.transform.position, 1f);
+        }
         
         Destroy(gameObject);
     }
-    
-    // void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         // Enemy hit player
-    //         PlayerController player = other.GetComponent<PlayerController>();
-    //         if (player != null)
-    //         {
-    //             GameManager gameManager = FindFirstObjectByType<GameManager>();
-    //             if (gameManager != null)
-    //             {
-    //                 gameManager.PlayerHit();
-    //             }
-    //             Destroy(other.gameObject);
-    //         }
-    //         Die();
-    //     }
-    // }
 }

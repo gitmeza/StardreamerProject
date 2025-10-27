@@ -24,12 +24,28 @@ public class UIManager : MonoBehaviour
     public Button restartButton;
     public Button quitButton;
 
+    [Header("Audio")]
+    public AudioClip introMusic;
+    public AudioClip whiteNoise;
+
     private GameManager gameManager;
     private bool isPaused = false;
+    private AudioSource audioSource;
+    private AudioSource whiteAudioSource;
 
     void Start()
     {
         gameManager = FindFirstObjectByType<GameManager>();
+
+        // Setting up audio
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = introMusic;
+        audioSource.loop = true;
+
+        whiteAudioSource = gameObject.AddComponent<AudioSource>();
+        whiteAudioSource.clip = whiteNoise;
+        whiteAudioSource.loop = true;
+
         SetupButtons();
         ShowMainMenu();
     }
@@ -86,14 +102,22 @@ public class UIManager : MonoBehaviour
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
 
+        //Play intro music
+        if (audioSource != null)
+            audioSource.Play();
+
         Time.timeScale = 0f;
     }
 
     public void StartGame()
     {
         if (mainMenuPanel != null)
+        {
             mainMenuPanel.SetActive(false);
             gameInfo.SetActive(true);
+            audioSource.Stop();
+            whiteAudioSource.Play();
+        }
         if (gameManager != null)
         {
             gameManager.RespawnPlayer();
